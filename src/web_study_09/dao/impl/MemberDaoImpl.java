@@ -124,5 +124,4 @@ public class MemberDaoImpl implements MemberDao {
         return 0;
     }
 
-
 }
