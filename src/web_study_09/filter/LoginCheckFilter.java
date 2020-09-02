@@ -1,6 +1,7 @@
 package web_study_09.filter;
 
 import java.io.IOException;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -12,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 
-@WebFilter("/*")
+@WebFilter(urlPatterns = { "/main.jsp" })
 public class LoginCheckFilter implements Filter {
 
 	public void destroy() {
